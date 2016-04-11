@@ -12,17 +12,26 @@ public class CalculatorTest {
 		calc.add(10, 20);
 		assertEquals(30, calc.getResult());
 	}
+
 	@Test
-	public void testMulti(){
-		Calculator calc=new Calculator();
+	public void testMulti() {
+		Calculator calc = new Calculator();
 		calc.multi(10, 20);
-		assertEquals(200,calc.getResult());
+		assertEquals(200, calc.getResult());
 	}
+
 	@Test
 	public void testSub() {
 		Calculator calc = new Calculator();
 		calc.sub(10, 20);
 		assertEquals(-10, calc.getResult());
+	}
+	
+	@Test
+	public void testDiv() {
+		Calculator calc = new Calculator();
+		calc.div(10, 2);
+		assertEquals(5, calc.getResult());
 	}
 
 }
